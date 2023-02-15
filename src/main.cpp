@@ -10,8 +10,8 @@
 
 #include "lodepng.h" //Used for png encoding.
 
-const int WIDTH = 3200;        // Size of rendered mandelbrot set.
-const int HEIGHT = 2400;       // Size of renderered mandelbrot set.
+const int WIDTH = 1920;        // Size of rendered mandelbrot set.
+const int HEIGHT = 1080;       // Size of renderered mandelbrot set.
 const int WORKGROUP_SIZE = 32; // Workgroup size in compute shader.
 
 #ifdef NDEBUG
@@ -280,7 +280,6 @@ public:
         applicationInfo.pEngineName = "awesomeengine";
         applicationInfo.engineVersion = 0;
         applicationInfo.apiVersion = VK_API_VERSION_1_0;
-        ;
 
         VkInstanceCreateInfo createInfo = {};
         createInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
